@@ -22,7 +22,7 @@
 
 
 
-name: Github actio offer
+name: Github action ofr
 on: push
 jobs:
  build:
@@ -30,4 +30,4 @@ jobs:
    steps:
     -uses: actions/checkout@v3 
     -name: Print hello world
-    run: node --version 
+     run: node --version 
