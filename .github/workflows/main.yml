@@ -25,9 +25,9 @@
 name: Github actio offer
 on: push
 jobs:
-build:
-runs-on: ubuntu-latest
-steps:
--uses: actions/checkout@v3 
--name: Print hello world
--run: node --version 
+ build:
+  runs-on: ubuntu-latest
+   steps:
+    -uses: actions/checkout@v3 
+    -name: Print hello world
+    -run: node --version 
