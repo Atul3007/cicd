@@ -7,18 +7,15 @@
 #       - name: Say Hello
 #         run: echo "Hello, World!"
 
-
-name: Node.js CI
-on: [push]
+name: Print Node Version
+on: push
 jobs:
-  build:
+  print-version:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
-      - name: Use Node.js ${{ matrix.node-version }}
+      - name: Install Node.js
         uses: actions/setup-node@v2
         with:
-          node-version: ${{ matrix.node-version }}
-      - run: npm install
-      - run: npm run build
-      - run: npm test
+          node-version: '14.x'
+      - name: Print Node Version
+        run: node -v
