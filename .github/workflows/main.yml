@@ -1,25 +1,3 @@
-# #workflow
-
-# title: Website name
-# description: uploading content
-# age: 30
-
-# #array
-# tags:
-# -tech
-# -images
-# -creative
-
-# #objects
-# address:
-# street: mg road
-# city: Banglore
-# state: KA
-
-# #gitvalue
-# vlaue: ${{env.value}}
-# variable: ${{github.Variable_name}}
-
 
 
 name: Github action ofr
