@@ -1,21 +1,34 @@
-#workflow
+# #workflow
 
-title: Website name
-description: uploading content
-age: 30
+# title: Website name
+# description: uploading content
+# age: 30
 
-#array
-tags:
--tech
--images
--creative
+# #array
+# tags:
+# -tech
+# -images
+# -creative
 
-#objects
-address:
-street: mg road
-city: Banglore
-state: KA
+# #objects
+# address:
+# street: mg road
+# city: Banglore
+# state: KA
 
-#gitvalue
-vlaue: ${{env.value}}
-variable: ${{github.Variable_name}}
+# #gitvalue
+# vlaue: ${{env.value}}
+# variable: ${{github.Variable_name}}
+
+
+
+name: Github actio offer
+on: 
+push:
+branches: [main]
+jobs:
+build:
+runs-on: ubuntu-latest
+steps: 
+-name: Print hello world
+-run: echo "hello world!" 
