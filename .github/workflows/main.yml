@@ -1,6 +1,6 @@
 #workflow
 
-name: Github action ofr
+-name: Github action ofr
 on: push
 jobs:
  build:
