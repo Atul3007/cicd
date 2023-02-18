@@ -23,12 +23,12 @@
 
 
 name: Github actio offer
-on: 
-push:
+on: push:
 branches: [main]
 jobs:
 build:
 runs-on: ubuntu-latest
-steps: 
+steps:
+-uses: actions/checkout@v3 
 -name: Print hello world
--run: echo "hello world!" 
+ run: echo "hello world!" 
